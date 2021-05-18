@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="imageview">ImageView</string>
+    <string name="clear">Clear</string>
+    <string name="bangalore">Bangalore</string>
+    <string name="_32">32°</string>
+    <string name="h_35_l_23">H 35 L 23</string>
+    <string name="mon">Mon</string>
+
+</resources>

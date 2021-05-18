@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/weather_image_main"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weather_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/clear"
+        android:textColor="@color/white"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_image_main" />
+
+    <TextView
+        android:id="@+id/weather_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/bangalore"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_status" />
+
+    <LinearLayout
+        android:id="@+id/weatherLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#ffc252"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_location">
+
+        <LinearLayout
+            android:id="@+id/weather_temp_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_32"
+                android:textColor="@color/white"
+                android:textSize="56sp" />
+
+            <TextView
+                android:id="@+id/atmospheric_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/h_35_l_23"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/weather_future_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/weekday_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mon"
+                android:textSize="26sp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:id="@+id/weekday_weather_status_ImageView"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_sun"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/weather_future_LL1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/weekday_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mon"
+                android:textSize="26sp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:id="@+id/weekday_weather_status_ImageView1"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_sun"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/weather_future_LL2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/weekday_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mon"
+                android:textSize="26sp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:id="@+id/weekday_weather_status_ImageView2"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_sun"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
